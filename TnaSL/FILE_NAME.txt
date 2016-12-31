@@ -1,0 +1,21 @@
+> -input:     trace_0.trace
+> -tm:        m2mtrust
+> -strategy:  isolated
+
+The argument provided to '-tm' must be an algorithm already implemented
+within the system. Currently, the following algorithms are implemented:
+
+> 'eigen': The EigenTrust algorithm of Hector Garcia-Molina, et al.
+> 'peertrust': PeerTrust from Georgia Tech.
+> 'm2mtrust': M2MTrust from Georgia Tech.
+> 'm2mtrust_up': M2MTrust with uniform propagation.
+> 'tnasl": System using Subjective Logic operators, inspired by Josang et al.
+> 'none':  Absence of trust management. Essentially random source selection.
+
+Similarly, the possible arguments to '-strategy' are pre-programmed:
+
+> 'isolated'
+> 'collective 
+> 'disguise'
+> 'spy'
+as described in the papers EigenTrust and M2MTrust.
